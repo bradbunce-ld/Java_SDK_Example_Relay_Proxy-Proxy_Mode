@@ -11,10 +11,9 @@ This project uses [Gradle](https://gradle.org/). It requires that Java is alread
 1. Edit `src/main/java/Hello.java` and set the value of `SDK_KEY` to your LaunchDarkly SDK key. If there is an existing boolean feature flag in your LaunchDarkly project that you want to evaluate, set `FEATURE_FLAG_KEY` to the flag key.  You will also need to set the value of `RELAY_PROXY` to the URI of your Relay Proxy.
 
 ```java
-  static final String SDK_KEY = "1234567890abcdef";
+  static final String SDK_KEY = "sdk-1234567890abcdef";
 
   static final String FEATURE_FLAG_KEY = "my-flag";
-```
 
   static final String RELAY_PROXY = "http://your-relay-proxy:8030";
 ```
