@@ -16,7 +16,7 @@ This project uses [Gradle](https://gradle.org/). It requires that Java is alread
   static final String FEATURE_FLAG_KEY = "my-flag";
 ```
 
-static final String RELAY_PROXY = "http://your-relay-proxy:8030";
+  static final String RELAY_PROXY = "http://your-relay-proxy:8030";
 ```
 
 2. On the command line, run `./gradlew run` (or, on Windows, `gradlew run`).
