@@ -32,10 +32,12 @@ public class Hello {
     try {
       uri = new URI(RELAY_PROXY);
       LDConfig config  = new LDConfig.Builder()
-                                   .dataSource(Components.streamingDataSource()
-                                   .baseURI(uri))
-                                   .events(Components.sendEvents().baseURI(uri))
-                                   .build();
+        .events(Components.sendEvents().baseURI(uri)
+        )
+        .dataSource(Components.streamingDataSource()
+          .baseURI(uri)
+        )
+        .build();
       System.out.println("URI parsed successfully!");
 
     LDClient client = new LDClient(SDK_KEY, config);
